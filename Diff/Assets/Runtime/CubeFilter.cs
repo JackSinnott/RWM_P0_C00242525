@@ -4,19 +4,6 @@ using UnityEngine;
 
 public class CubeFilter : MonoBehaviour
 {
-    //static int[] numbersBaby = new int[10] {4, 2, 8, 3, 9, 4, 10, 5, 11, 6};
-
- //   foreach (var nums in numbersBaby)
-	//{
- //       int = numBaby; // initial num
- //       numBaby = nums;
- //       int numBabyJr = 0; // log of number thats next
- //       numBaby = nums;
-
- //       int diffBaby = numBaby - numBabyjr; // sum to output
-
- //       console.writeLine(diffBaby);
-	//}
     public static int[] Diff(int[] xs)
     {
         int[] copyArrayBaby = new int[xs.Length];
@@ -27,22 +14,20 @@ public class CubeFilter : MonoBehaviour
         {
             int num = xs[i];
             
+            // initially subsitute 0
             if (i == 0)
             {
                 prevNum = 0;
                 finalNum = num - prevNum;
             }
+            // Then subsitute previous number in array
             else
             {
                 prevNum = xs[i - 1];
                 finalNum = prevNum - num;
             }
             
-
-            
-            
-
-
+            // Absolute values so change any negative numbers to positive ones
             if (finalNum < 0)
                 finalNum *= -1;
 
