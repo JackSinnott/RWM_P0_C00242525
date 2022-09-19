@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeFilter : MonoBehaviour
+public class Difference : MonoBehaviour
 {
     public static int[] Diff(int[] xs)
     {
