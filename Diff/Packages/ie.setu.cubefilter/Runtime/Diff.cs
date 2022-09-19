@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Difference : MonoBehaviour
+public class Diff : MonoBehaviour
 {
-    public static int[] Diff(int[] xs)
+    public static int[] Difference(int[] xs)
     {
         int[] copyArrayBaby = new int[xs.Length];
         int finalNum = 0;
@@ -13,7 +13,7 @@ public class Difference : MonoBehaviour
         for (int i = 0; i < xs.Length; i++)
         {
             int num = xs[i];
-            
+
             // initially subsitute 0
             if (i == 0)
             {
@@ -26,7 +26,7 @@ public class Difference : MonoBehaviour
                 prevNum = xs[i - 1];
                 finalNum = prevNum - num;
             }
-            
+
             // Absolute values so change any negative numbers to positive ones
             if (finalNum < 0)
                 finalNum *= -1;
