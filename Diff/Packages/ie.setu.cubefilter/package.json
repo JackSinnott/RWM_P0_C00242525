@@ -1,6 +1,6 @@
 {
-	"name": "ie.setu.difference",
-	"version": "0.1.0",
+	"name": "ie.setu.cubefilter",
+	"version": "1.0.0",
 	"displayName": "Diff",
 	"description": "A filter that calculates the difference between numbers.",
 	"unity": "2021.3"
